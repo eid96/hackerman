@@ -3,7 +3,8 @@
 
 ## Strucutre
 Different script for the different attacks will be found in the attack folder, and the files should be named accordingly.
-
+# Log in
+- Log in at login page as Jonas Dahl 
 # Intranet: Level 1
 - Jonas Dahl frequently logs in to check his Wireguard credentials.
 - Discord WEBHOOKS can be very useful here.<br> </br> 
