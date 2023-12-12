@@ -18,12 +18,12 @@ def login(attempt_pw, a):
             return True
         else:
             return False
-    #Chatgpt generated exception that checks for json errors
+    #Chatgpt generated exception that checks for json errors, added before seing discord hints
     except JSONDecodeError:
         # Handle JSON decoding error
         print("JSON decoding error. Response content:", res.text)
         return False
-    # Chatgpt generated exception that checks for other errors
+    # Chatgpt generated exception that checks for other errors.  added before seing discord hints
     except requests.exceptions.RequestException as e:
 
         print(f"Request error: {e}")
