@@ -2,7 +2,7 @@
 
 
 ## Strucutre
-Different script for the different levels will be found in the levels folder, and the files should be named accordingly <br> 
+Different script for the different attacks will be found in the attack folder, and the files should be named accordingly.
 
 # Intranet: Level 1
 - Jonas Dahl frequently logs in to check his Wireguard credentials.

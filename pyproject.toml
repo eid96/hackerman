@@ -1,0 +1,8 @@
+[tool.poetry]
+name = "attacks"
+version = "0.1.0"
+description = "Assignment 4 IKT222"
+authors = ["Morten Eidet", "William Andreas Nævisdal Zehngraff"]
+
+[tool.poetry.dependencies]
+python = "^3.8"
