@@ -40,9 +40,7 @@ def solve_password():
     jonas_pw = ''
     # index for characters found
     a = 0
-
     while True:
-
         for valid in validchar:
             pw = pw[:a] + valid + pw[a + 1:]
             # statement that
@@ -51,15 +49,14 @@ def solve_password():
                 print(jonas_pw)
                 break
         a += 1
-
         if a == 17:
             break
-    print(f"Found: {jonas_pw}")
+    #Notefrom discord "Hint:  det er en bug i timing attacket. Dere får ut 15 av 17. De siste to karakterene i
+    # passordet er 23"
+    print(f"Found: {jonas_pw}23")
 
 
     return jonas_pw
-
-
 
 if __name__ == "__main__":
     solve_password()
