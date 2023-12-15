@@ -58,6 +58,5 @@ def solve_password():
 
     return jonas_pw
 
-# Entry point of the script
-if __name__ == "__main__":
-    solve_password()
+
+

